@@ -1,0 +1,35 @@
+<archetype xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+
+    <id>learning-maven-archetype</id>
+
+    <sources>
+        <source>src/main/java/App.java</source>
+        <source>src/main/java/config/AppConfig.java</source>
+        <source>src/main/java/config/WebConfig.java</source>
+        <source>src/main/java/config/SwaggerConfig.java</source>
+        <source>src/main/java/capability/Capability.java</source>
+        <source>src/main/java/capability/CapabilityImpl.java</source>
+        <source>src/main/java/constants/LoggingConstants.java</source>
+        <source>src/main/java/controller/AliveController.java</source>
+        <source>src/main/java/exception/KnownException.java</source>
+        <source>src/main/java/exception/UnknownException.java</source>
+        <source>src/main/java/exception/RequestHeaderValidationException.java</source>
+        <source>src/main/java/exception/handling/CustomExceptionHandler.java</source>
+        <source>src/main/java/exception/handling/Error.java</source>
+        <source>src/main/java/exception/handling/ErrorCode.java</source>
+        <source>src/main/java/logging/LoggingFilter.java</source>
+        <source>src/main/java/pojo/vo/RequestBodyVO.java</source>
+        <source>src/main/java/pojo/vo/RequestHeaderVO.java</source>
+        <source>src/main/java/pojo/vo/ResponseVO.java</source>
+        <source>src/main/java/utils/BeanUtils.java</source>
+        <source>src/main/java/utils/HeaderUtils.java</source>
+    </sources>
+
+    <resources>
+        src/main/resources/application.properties
+        src/main/resources/log4j2.xml
+    </resources>
+
+</archetype>
