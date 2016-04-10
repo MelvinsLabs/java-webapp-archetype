@@ -20,6 +20,7 @@
         <source>src/main/java/exception/handling/Error.java</source>
         <source>src/main/java/exception/handling/ErrorCode.java</source>
         <source>src/main/java/logging/LoggingFilter.java</source>
+        <source>src/main/java/pojo/models/DomainModel.java</source>
         <source>src/main/java/pojo/vo/RequestBodyVO.java</source>
         <source>src/main/java/pojo/vo/RequestHeaderVO.java</source>
         <source>src/main/java/pojo/vo/ResponseVO.java</source>
