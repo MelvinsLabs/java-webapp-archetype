@@ -28,8 +28,7 @@
     </sources>
 
     <resources>
-        src/main/resources/application.properties
-        src/main/resources/log4j2.xml
+		<resource>src/main/resources/application.properties</resource>
     </resources>
 
 </archetype>
