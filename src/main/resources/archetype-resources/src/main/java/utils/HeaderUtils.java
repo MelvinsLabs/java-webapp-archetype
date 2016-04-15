@@ -19,6 +19,8 @@ import java.util.Set;
 import static ${package}.utils.BeanUtils.fillBean;
 
 /**
+ * Request Header Utility functions.
+ *
  * @author Mels
  */
 public class HeaderUtils {
@@ -26,11 +28,17 @@ public class HeaderUtils {
     private static final Logger LOGGER = LogManager.getLogger(HeaderUtils.class,
             new MessageFormatMessageFactory());
 
-    public static RequestHeaderVO transformRequestHeader(Map<String, Object> headers, Class clazz) {
+    /**
+     * Transform the Request Headers as Map, into {@link RequestHeaderVO}.
+     *
+     * @param headers Map of Headers as Key-Value pair.
+     * @return
+     */
+    public static RequestHeaderVO transformRequestHeader(Map<String, Object> headers) {
 
         RequestHeaderVO requestHeaderVO = null;
         try {
-            requestHeaderVO = (RequestHeaderVO) fillBean(headers, clazz);
+            requestHeaderVO = (RequestHeaderVO) fillBean(headers, RequestHeaderVO.class);
 
         } catch (InstantiationException | IllegalAccessException ex) {
             LOGGER.error("Unable To Transform Request Headers");
@@ -40,6 +48,11 @@ public class HeaderUtils {
         return requestHeaderVO;
     }
 
+    /**
+     * Validate the {@link RequestHeaderVO}.
+     *
+     * @param requestHeaderVO Request Header POJO
+     */
     public static void validateRequestHeader(RequestHeaderVO requestHeaderVO) {
 
         ValidatorFactory validatorFactory = Validation.buildDefaultValidatorFactory();
